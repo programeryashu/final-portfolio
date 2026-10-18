@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Bharti — AI/ML Developer &amp; Builder</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Yash Bharti — AI/ML student, developer and builder working with artificial intelligence, computer vision, web development and experimental technologies."
+    />
+    <script>
+      // apply saved/OS theme before first paint (no flash)
+      try {
+        var t = localStorage.getItem('yb-theme')
+        if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        document.documentElement.setAttribute('data-theme', t)
+      } catch (e) {}
+    </script>
+    <meta name="theme-color" content="#080808" />
+    <meta name="author" content="Yash Bharti" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yash Bharti — AI/ML Developer &amp; Builder" />
+    <meta
+      property="og:description"
+      content="I build things with code, AI & curiosity. Projects, experiments and lessons from an AI/ML student who ships."
+    />
+    <meta property="og:site_name" content="Yash Bharti" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Yash Bharti — AI/ML Developer &amp; Builder" />
+    <meta
+      name="twitter:description"
+      content="I build things with code, AI & curiosity. Projects, experiments and lessons from an AI/ML student who ships."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts: Poppins (UI/display) + Lora (editorial annotations) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yash Bharti",
+        "jobTitle": "AI/ML Student & Developer",
+        "description": "AI/ML student, developer and experimental builder.",
+        "url": "https://github.com/programeryashu",
+        "sameAs": [
+          "https://github.com/programeryashu",
+          "https://www.linkedin.com/in/yash-bharti-354aa4384",
+          "https://www.instagram.com/yash_bharti2007"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="font-family: sans-serif; color: #ede8e4; background: #080808; padding: 4rem; max-width: 40rem; margin: 0 auto">
+        <h1>Yash Bharti — AI/ML Developer &amp; Builder</h1>
+        <p>
+          I build things with code, AI &amp; curiosity. This portfolio needs JavaScript for the interactive version —
+          meanwhile, you can find me on
+          <a href="https://github.com/programeryashu" style="color: #f8e7dd">GitHub</a>.
+        </p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

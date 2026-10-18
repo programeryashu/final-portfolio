@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="FAR AWAY 2026 International Hackathon participation certificate">
+  <defs>
+    <linearGradient id="fc-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f0f12"/>
+      <stop offset="1" stop-color="#08080b"/>
+    </linearGradient>
+    <linearGradient id="fc-top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1714"/>
+      <stop offset="1" stop-color="#0f0f12"/>
+    </linearGradient>
+    <linearGradient id="fc-ribbon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9b8a4"/>
+      <stop offset="0.5" stop-color="#f8e7dd"/>
+      <stop offset="1" stop-color="#d9b8a4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- page -->
+  <rect width="800" height="520" fill="url(#fc-bg)"/>
+  <rect width="800" height="520" fill="none" stroke="#26221d" stroke-width="1"/>
+
+  <!-- top band -->
+  <rect x="0" y="0" width="800" height="46" fill="url(#fc-top)"/>
+  <rect x="0" y="44" width="800" height="2" fill="#d9b8a4" opacity="0.6"/>
+
+  <!-- top-left chevron -->
+  <path d="M20 28 L30 28 L25 38 Z" fill="#d9b8a4"/>
+
+  <!-- event name -->
+  <text x="460" y="26" font-family="Georgia, serif" font-weight="600" font-size="24" fill="#ede8e4" text-anchor="end" letter-spacing="1">F A R  A W A Y</text>
+  <text x="460" y="46" font-family="monospace" font-size="11" fill="#55504b" text-anchor="end">INTERNATIONAL HACKATHON · 2026</text>
+
+  <!-- main certificate card -->
+  <rect x="40" y="74" width="720" height="360" rx="12" fill="#12100d" stroke="#2a241e" stroke-width="1.2"/>
+  <rect x="40" y="74" width="720" height="20" rx="12" fill="#d9b8a4" opacity="0.18"/>
+
+  <!-- ribbon -->
+  <rect x="280" y="96" width="240" height="8" rx="4" fill="url(#fc-ribbon)" opacity="0.9"/>
+  <rect x="280" y="96" width="240" height="8" rx="4" fill="none" stroke="#f8e7dd" stroke-width="1"/>
+
+  <text x="400" y="114" font-family="Georgia, serif" font-weight="600" font-size="26" fill="#ede8e4" text-anchor="middle">CERTIFICATE OF PARTICIPATION</text>
+  <text x="400" y="138" font-family="monospace" font-size="11" fill="#55504b" text-anchor="middle" letter-spacing="3">ROUND 2 · JURY SELECTED</text>
+
+  <!-- recipient -->
+  <text x="400" y="186" font-family="Georgia, serif" font-weight="700" font-size="44" fill="#f8e7dd" text-anchor="middle" letter-spacing="1">YASH B HARTI</text>
+
+  <!-- team / event details -->
+  <g font-family="monospace" font-size="14" fill="#9a938c">
+    <text x="400" y="242" text-anchor="middle">as Team Error 404</text>
+    <text x="400" y="262" text-anchor="middle">Team Not Found</text>
+  </g>
+
+  <!-- body -->
+  <g font-family="Georgia, serif" font-size="20" fill="#ede8e4">
+    <text x="70" y="306">This is to certify that</text>
+    <text x="70" y="334">Yash Bharti has participated in</text>
+    <text x="70" y="362">Round 1: Online (MVP Submission)</text>
+    <text x="70" y="390">and Round 2 of</text>
+    <text x="70" y="418">FAR AWAY 2026 — International Hackathon</text>
+    <text x="70" y="446">“A step closer to the journey to Japan.”</text>
+  </g>
+  <g font-family="monospace" font-size="14" fill="#55504b">
+    <text x="70" y="324">CF No: FA26-U7N1XJ96-03 · Issued Aug 2026</text>
+  </g>
+
+  <!-- signatures -->
+  <g font-family="monospace" font-size="12" fill="#9a938c">
+    <text x="480" y="472">ORGANIZING TEAM</text>
+    <text x="480" y="492">August 2026</text>
+  </g>
+
+  <!-- bottom caption -->
+  <rect x="40" y="462" width="720" height="40" rx="0" fill="#0a0a0c"/>
+  <text x="400" y="482" font-family="monospace" font-size="10" fill="#55504b" text-anchor="middle">FAR AWAY 2026 · organized by Zuup · participation certificate</text>
+</svg>

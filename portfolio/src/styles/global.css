@@ -1,0 +1,362 @@
+/* ------------------------------------------------------------------
+   yash bharti — design tokens
+   Dark is the authored default ("digital lab at night"). Light is a
+   deliberate re-tune, not an inversion: same layout, same peach lamp,
+   warmer paper. Toggle sets data-theme on <html>.
+------------------------------------------------------------------- */
+:root,
+:root[data-theme='dark'] {
+  --bg: #080808;
+  --bg-2: #111111;
+  --bg-3: #161513;
+  --ink: #ede8e4;
+  --ink-dim: #9a938c;
+  --ink-faint: #55504b;
+  --peach: #f8e7dd;
+  --peach-ink: #080808; /* text on peach fills */
+  --peach-dim: rgba(248, 231, 221, 0.55);
+  --line: rgba(237, 232, 228, 0.09);
+  --line-strong: rgba(237, 232, 228, 0.16);
+  --scrim: rgba(8, 8, 8, 0.8);
+  --term-bg: #0b0b0b;
+  --term-dot: #2a2724;
+  --panel: #101010;
+  --scroll-thumb: #2a2724;
+  --scroll-thumb-hover: #3a352f;
+  --scene-ink: #ede8e4;
+  --scene-dim: #6b625a;
+
+  --font-ui: 'Poppins', system-ui, sans-serif;
+  --font-editorial: 'Lora', Georgia, serif;
+
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+  --section-pad: clamp(5rem, 14vh, 10rem);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f4f1ec;
+  --bg-2: #ebe6df;
+  --bg-3: #e2dcd4;
+  --ink: #26221e;
+  --ink-dim: #6b625a;
+  --ink-faint: #998f85;
+  --peach: #c98a63; /* deepened so it still reads on paper */
+  --peach-ink: #fbf7f3;
+  --peach-dim: rgba(201, 138, 99, 0.6);
+  --line: rgba(38, 34, 30, 0.12);
+  --line-strong: rgba(38, 34, 30, 0.22);
+  --scrim: rgba(244, 241, 236, 0.82);
+  --term-bg: #ffffff;
+  --term-dot: #d8d0c6;
+  --panel: #eae4dc;
+  --scroll-thumb: #c9c0b4;
+  --scroll-thumb-hover: #b3a99b;
+  --scene-ink: #26221e;
+  --scene-dim: #b0a598;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+:root[data-theme] {
+  --theme-fade: 240ms;
+}
+
+body,
+.nav,
+.term,
+.chip--soft,
+.btn,
+.footer,
+.viewer__backdrop,
+.nav__overlay {
+  transition: background-color var(--theme-fade, 0ms) ease, color var(--theme-fade, 0ms) ease,
+    border-color var(--theme-fade, 0ms) ease;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--peach);
+  color: var(--peach-ink);
+}
+
+/* focus: visible, peach, not ugly */
+:focus-visible {
+  outline: 2px solid var(--peach);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+/* ---- shared primitives ------------------------------------------ */
+
+.container {
+  padding-inline: var(--gutter);
+  max-width: 90rem;
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-pad);
+  position: relative;
+}
+
+/* section label, e.g. "01 — about" */
+.kicker {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.kicker::before {
+  content: '';
+  width: 2.5rem;
+  height: 1px;
+  background: var(--line-strong);
+}
+
+/* editorial handwriting-ish annotation (Lora italic) */
+.note {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  color: var(--ink-dim);
+  font-size: 0.95rem;
+}
+
+.note--accent {
+  color: var(--peach-dim);
+}
+
+/* big display headings */
+.display {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.display em {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* reveal-on-scroll base (JS adds .is-visible) */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.9s var(--ease-out),
+    transform 0.9s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0s);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* variants: editorial entrances, not one-size-fits-all */
+.reveal--left {
+  transform: translateX(-34px);
+}
+
+.reveal--left.is-visible {
+  transform: none;
+}
+
+.reveal--scale {
+  transform: translateY(18px) scale(0.97);
+}
+
+.reveal--scale.is-visible {
+  transform: none;
+}
+
+/* hero entrance choreography: lines rise as a mask opens */
+.hero__line {
+  display: block;
+  clip-path: inset(0 0 110% 0);
+  transform: translateY(0.6em);
+  animation: hero-rise 1s var(--ease-out) forwards;
+}
+
+.hero__line:nth-child(2) {
+  animation-delay: 0.14s;
+}
+
+.hero__line:nth-child(3) {
+  animation-delay: 0.28s;
+}
+
+@keyframes hero-rise {
+  to {
+    clip-path: inset(0 0 -12% 0);
+    transform: none;
+  }
+}
+
+.hero__kicker,
+.hero__support,
+.hero__ctas,
+.hero__scroll {
+  opacity: 0;
+  animation: fade-up 0.8s var(--ease-out) forwards;
+}
+
+.hero__kicker {
+  animation-delay: 0.45s;
+}
+
+.hero__support {
+  animation-delay: 0.6s;
+}
+
+.hero__ctas {
+  animation-delay: 0.75s;
+}
+
+.hero__scroll {
+  animation-delay: 1.3s;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* nav link: peach underline grows from left on hover */
+.nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--peach);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s var(--ease-out);
+}
+
+.nav__link--active::after,
+.nav__link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ---- reduced motion: calm everything down ------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero__line {
+    clip-path: none;
+    transform: none;
+    animation: none;
+  }
+
+  .hero__kicker,
+  .hero__support,
+  .hero__ctas,
+  .hero__scroll {
+    opacity: 1;
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---- scrollbar --------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+  border-radius: 5px;
+  border: 2px solid var(--bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover);
+}

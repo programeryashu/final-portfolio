@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Arora Astro design mock: knowledge system pipeline and grounded answer">
+  <defs>
+    <linearGradient id="aa-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f0e11"/>
+      <stop offset="1" stop-color="#090909"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#aa-bg)"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#2a2724"/>
+  <rect x="0" y="0" width="800" height="38" fill="#161513"/>
+  <circle cx="22" cy="19" r="5" fill="#f8e7dd" opacity="0.75"/>
+  <circle cx="42" cy="19" r="5" fill="#2a2724"/>
+  <circle cx="62" cy="19" r="5" fill="#2a2724"/>
+  <text x="80" y="24" font-family="monospace" font-size="12" fill="#ede8e4" letter-spacing="1">arora-astro · knowledge system</text>
+
+  <!-- left: 3-layer pipeline -->
+  <text x="32" y="80" font-family="monospace" font-size="11" fill="#9a938c" letter-spacing="2">PIPELINE · 3 LAYERS</text>
+
+  <g font-family="monospace" font-size="12">
+    <!-- layer 1 -->
+    <rect x="32" y="94" width="322" height="64" rx="5" fill="#131211" stroke="#2a2724"/>
+    <text x="48" y="118" fill="#f8e7dd">L1 · extract</text>
+    <text x="48" y="140" fill="#9a938c" font-size="11">raw sources → entries.json</text>
+    <rect x="48" y="147" width="200" height="4" fill="#1e1c1a"/>
+    <rect x="48" y="147" width="168" height="4" fill="#f8e7dd" opacity="0.35"/>
+    <!-- layer 2 -->
+    <rect x="32" y="178" width="322" height="64" rx="5" fill="#131211" stroke="#2a2724"/>
+    <text x="48" y="202" fill="#f8e7dd">L2 · restructure</text>
+    <text x="48" y="224" fill="#9a938c" font-size="11">normalize · dedupe · schema-check</text>
+    <path d="M56 234h270" stroke="#1e1c1a" stroke-width="4"/>
+    <circle cx="120" cy="234" r="4" fill="#f8e7dd" opacity="0.5"/>
+    <circle cx="210" cy="234" r="4" fill="#f8e7dd" opacity="0.5"/>
+    <circle cx="300" cy="234" r="4" fill="#f8e7dd" opacity="0.25"/>
+    <!-- layer 3 -->
+    <rect x="32" y="262" width="322" height="64" rx="5" fill="#131211" stroke="#f8e7dd" stroke-opacity="0.4"/>
+    <text x="48" y="286" fill="#f8e7dd">L3 · retrieve + answer</text>
+    <text x="48" y="308" fill="#9a938c" font-size="11">local corpus → grounded LLM reply</text>
+  </g>
+  <!-- connectors -->
+  <g stroke="#55504b" fill="none">
+    <path d="M193 158v20"/>
+    <path d="M193 242v20"/>
+  </g>
+  <text x="32" y="356" font-family="monospace" font-size="11" fill="#55504b">store: supabase · corpus: local-first</text>
+
+  <!-- right: terminal Q&A -->
+  <rect x="396" y="62" width="372" height="300" rx="6" fill="#0b0b0b" stroke="#2a2724"/>
+  <rect x="396" y="62" width="372" height="28" rx="6" fill="#161513"/>
+  <rect x="396" y="78" width="372" height="12" fill="#161513"/>
+  <text x="414" y="80" font-family="monospace" font-size="11" fill="#9a938c">ask the corpus</text>
+  <g font-family="monospace" font-size="12">
+    <text x="414" y="118"><tspan fill="#f8e7dd">$</tspan> <tspan fill="#ede8e4">query: "house of moon"?</tspan></text>
+  </g>
+  <line x1="414" y1="134" x2="750" y2="134" stroke="#1e1c1a"/>
+  <g font-family="monospace" font-size="11.5">
+    <text x="414" y="160" fill="#55504b">retrieving · 3 chunks · corpus v0.7</text>
+  </g>
+  <g font-family="Georgia, serif" font-size="13" fill="#ede8e4">
+    <text x="414" y="190">The corpus says:</text>
+  </g>
+  <g font-family="Georgia, serif" font-size="12.5" fill="#9a938c">
+    <text x="414" y="216">"House of Moon" refers to lunar</text>
+    <text x="414" y="236">exaltation narratives folded into</text>
+    <text x="414" y="256">the evening-star tradition — source:</text>
+    <text x="414" y="276">folio 14, second interpretation.</text>
+  </g>
+  <g font-family="monospace" font-size="11" fill="#55504b">
+    <text x="414" y="308">grounded · 2 citations · no outside fill</text>
+  </g>
+  <rect x="414" y="324" width="22" height="13" fill="#f8e7dd" opacity="0.75"/>
+
+  <!-- data integrity strip -->
+  <g font-family="monospace" font-size="11.5">
+    <rect x="32" y="384" width="372" height="26" fill="#131211" stroke="#2a2724"/>
+    <text x="46" y="401" fill="#ede8e4">entries: 1,842   conflicts: 17 resolved   gaps: flagged, not filled</text>
+  </g>
+  <text x="32" y="452" font-family="Georgia, serif" font-style="italic" font-size="14" fill="#55504b">design mock — the corpus values shown are placeholders, the pipeline is real</text>
+  <text x="32" y="474" font-family="monospace" font-size="11" fill="#55504b">python · llms · json · supabase</text>
+</svg>

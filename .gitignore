@@ -1,0 +1,19 @@
+# dependencies / build output
+node_modules/
+dist/
+*.log
+
+# env files (API keys live here — never commit)
+.env
+.env.*
+!.env.example
+
+# platform metadata
+.freebuff/
+
+# separate cloned project (its own git history, not part of the site)
+agency-agents/
+
+# os junk
+.DS_Store
+Thumbs.db

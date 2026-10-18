@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="SentinelID design mock: face recognition attendance console">
+  <defs>
+    <linearGradient id="sid-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#111111"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="sid-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8e7dd"/>
+      <stop offset="1" stop-color="#d9b8a4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- window chrome -->
+  <rect width="800" height="500" fill="url(#sid-bg)"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#2a2724"/>
+  <rect x="0" y="0" width="800" height="38" fill="#161513"/>
+  <circle cx="22" cy="19" r="5" fill="#f8e7dd" opacity="0.75"/>
+  <circle cx="42" cy="19" r="5" fill="#2a2724"/>
+  <circle cx="62" cy="19" r="5" fill="#2a2724"/>
+  <text x="720" y="24" font-family="monospace" font-size="12" fill="#55504b" text-anchor="end">sentinelid — v0.3</text>
+
+  <!-- left: camera feed panel -->
+  <rect x="28" y="62" width="380" height="286" rx="6" fill="#0d0d0d" stroke="#2a2724"/>
+  <rect x="44" y="78" width="348" height="222" fill="#131211" stroke="#3a352f"/>
+  <!-- camera grid -->
+  <g stroke="#1e1c1a" stroke-width="1">
+    <path d="M78 78v222 M112 78v222 M146 78v222 M180 78v222 M214 78v222 M248 78v222 M282 78v222 M316 78v222 M350 78v222"/>
+    <path d="M44 110h348 M44 142h348 M44 174h348 M44 206h348 M44 238h348 M44 270h348"/>
+  </g>
+  <!-- detected faces: bounding boxes -->
+  <g fill="none" stroke="#f8e7dd" stroke-width="1.6">
+    <rect x="86" y="118" width="52" height="64"/>
+    <rect x="238" y="150" width="48" height="60"/>
+    <rect x="312" y="196" width="44" height="55"/>
+  </g>
+  <!-- corner ticks on first box -->
+  <g stroke="#f8e7dd" stroke-width="2.4">
+    <path d="M86 126v-8h8 M130 118h8v8 M86 174v8h8 M138 182v-8h-8"/>
+  </g>
+  <text x="86" y="112" font-family="monospace" font-size="10" fill="#f8e7dd" opacity="0.9">id_014 · 96%</text>
+  <text x="238" y="144" font-family="monospace" font-size="10" fill="#f8e7dd" opacity="0.7">id_027 · 91%</text>
+  <text x="312" y="190" font-family="monospace" font-size="10" fill="#f8e7dd" opacity="0.55">matching…</text>
+  <!-- scanline -->
+  <rect x="44" y="214" width="348" height="1.6" fill="#f8e7dd" opacity="0.5"/>
+  <rect x="44" y="222" width="348" height="14" fill="#f8e7dd" opacity="0.06"/>
+  <!-- feed footer -->
+  <rect x="44" y="308" width="348" height="24" fill="#161513"/>
+  <circle cx="56" cy="320" r="4" fill="#f8e7dd"/>
+  <text x="68" y="324" font-family="monospace" font-size="11" fill="#9a938c">CAM 0 · 640×480 · 24 fps</text>
+  <text x="388" y="324" font-family="monospace" font-size="11" fill="#55504b" text-anchor="end">live</text>
+
+  <!-- right: recognition log -->
+  <rect x="432" y="62" width="340" height="286" rx="6" fill="#0d0d0d" stroke="#2a2724"/>
+  <rect x="432" y="62" width="340" height="30" rx="6" fill="#161513"/>
+  <rect x="432" y="80" width="340" height="12" fill="#161513"/>
+  <text x="452" y="81" font-family="monospace" font-size="11" fill="#9a938c" letter-spacing="2">RECOGNITION LOG</text>
+  <g font-family="monospace" font-size="12">
+    <text x="452" y="122" fill="#ede8e4">14:02:11  <tspan fill="#f8e7dd">id_014</tspan>  marked PRESENT</text>
+    <text x="452" y="150" fill="#ede8e4">14:02:24  <tspan fill="#f8e7dd">id_027</tspan>  marked PRESENT</text>
+    <text x="452" y="178" fill="#ede8e4">14:02:52  <tspan fill="#55504b">unknown</tspan>  flagged — review</text>
+    <text x="452" y="206" fill="#ede8e4">14:03:10  <tspan fill="#f8e7dd">id_031</tspan>  marked PRESENT</text>
+    <text x="452" y="234" fill="#ede8e4">14:03:47  <tspan fill="#55504b">id_009</tspan>  low conf 61% — retry</text>
+  </g>
+  <line x1="452" y1="262" x2="752" y2="262" stroke="#2a2724"/>
+  <g font-family="monospace" font-size="11" fill="#9a938c">
+    <text x="452" y="286">present: <tspan fill="#f8e7dd">3</tspan>   flagged: <tspan fill="#ede8e4">2</tspan></text>
+    <text x="452" y="308">threshold: 0.72   camera: ok</text>
+  </g>
+  <rect x="452" y="322" width="24" height="1.4" fill="#f8e7dd" opacity="0.8"/>
+
+  <!-- bottom: pipeline strip -->
+  <g font-family="monospace" font-size="11" fill="#9a938c">
+    <text x="28" y="382">pipeline:</text>
+  </g>
+  <g font-family="monospace" font-size="12" fill="#ede8e4">
+    <rect x="100" y="366" width="104" height="26" rx="3" fill="#161513" stroke="#2a2724"/>
+    <text x="152" y="383" text-anchor="middle">capture</text>
+    <rect x="228" y="366" width="104" height="26" rx="3" fill="#161513" stroke="#2a2724"/>
+    <text x="280" y="383" text-anchor="middle">detect</text>
+    <rect x="356" y="366" width="120" height="26" rx="3" fill="#161513" stroke="#f8e7dd" stroke-opacity="0.55"/>
+    <text x="416" y="383" text-anchor="middle" fill="#f8e7dd">embed</text>
+    <rect x="500" y="366" width="104" height="26" rx="3" fill="#161513" stroke="#2a2724"/>
+    <text x="552" y="383" text-anchor="middle">match</text>
+    <rect x="628" y="366" width="140" height="26" rx="3" fill="#161513" stroke="#2a2724"/>
+    <text x="698" y="383" text-anchor="middle">log → mysql</text>
+  </g>
+  <g font-family="monospace" font-size="12" fill="#55504b">
+    <text x="210" y="383">→</text>
+    <text x="338" y="383">→</text>
+    <text x="482" y="383">→</text>
+    <text x="610" y="383">→</text>
+  </g>
+
+  <!-- honest caption -->
+  <text x="28" y="462" font-family="Georgia, serif" font-style="italic" font-size="14" fill="#55504b">design mock — interface stylised, thresholds and timestamps approximate</text>
+  <text x="28" y="482" font-family="monospace" font-size="11" fill="#55504b">python · opencv · flask · mysql</text>
+</svg>

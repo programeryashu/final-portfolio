@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="IBM SkillsBuild completion certificate — AI in Practice (Bookstore project)">
+  <defs>
+    <linearGradient id="sb2-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1013"/>
+      <stop offset="1" stop-color="#08090c"/>
+    </linearGradient>
+    <linearGradient id="sb2-top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#18171a"/>
+      <stop offset="1" stop-color="#0f1013"/>
+    </linearGradient>
+    <linearGradient id="sb2-ribbon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9b8a4"/>
+      <stop offset="0.5" stop-color="#f8e7dd"/>
+      <stop offset="1" stop-color="#d9b8a4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="520" fill="url(#sb2-bg)"/>
+  <rect width="800" height="520" fill="none" stroke="#26221d" stroke-width="1"/>
+
+  <rect x="0" y="0" width="800" height="46" fill="url(#sb2-top)"/>
+  <rect x="0" y="44" width="800" height="2" fill="#d9b8a4" opacity="0.6"/>
+
+  <path d="M20 28 L30 28 L25 38 Z" fill="#d9b8a4"/>
+
+  <text x="460" y="26" font-family="Georgia, serif" font-weight="600" font-size="22" fill="#ede8e4" text-anchor="end" letter-spacing="2">IBM SKILLSBUILD</text>
+  <text x="460" y="46" font-family="monospace" font-size="11" fill="#55504b" text-anchor="end">Learning Patterns System of Record</text>
+
+  <rect x="40" y="74" width="720" height="360" rx="12" fill="#12100d" stroke="#2a241e" stroke-width="1.2"/>
+  <rect x="40" y="74" width="720" height="20" rx="12" fill="#d9b8a4" opacity="0.18"/>
+
+  <rect x="280" y="96" width="240" height="8" rx="4" fill="url(#sb2-ribbon)" opacity="0.9"/>
+  <rect x="280" y="96" width="240" height="8" rx="4" fill="none" stroke="#f8e7dd" stroke-width="1"/>
+
+  <text x="400" y="118" font-family="Georgia, serif" font-weight="600" font-size="20" fill="#ede8e4" text-anchor="middle" letter-spacing="3">COMPLETION CERTIFICATE</text>
+
+  <text x="400" y="148" font-family="Georgia, serif" font-weight="700" font-size="42" fill="#f8e7dd" text-anchor="middle" letter-spacing="1">YASH B HARTI</text>
+
+  <g font-family="monospace" font-size="14" fill="#9a938c">
+    <text x="400" y="210" text-anchor="middle">FOR THE COMPLETION OF</text>
+    <text x="400" y="232" text-anchor="middle" font-size="16" fill="#d9b8a4">AI CAN EXTEND HUMAN EXPERTISE</text>
+    <text x="400" y="254" text-anchor="middle" font-size="16" fill="#d9b8a4">(Artificial Intelligence in Practice)</text>
+  </g>
+
+  <g font-family="Georgia, serif" font-size="19" fill="#ede8e4">
+    <text x="70" y="306">This is to certify that</text>
+    <text x="70" y="334">Yash Bharti has completed the course</text>
+    <text x="70" y="362">“AI Can Extend Human Expertise (Artificial Intelligence in Practice)”,</text>
+    <text x="70" y="390">as recorded in the IBM Learning Patterns system of record.</text>
+  </g>
+  <g font-family="monospace" font-size="14" fill="#55504b">
+    <text x="70" y="332">Course: ILB-ZKVJNXVZKMZXEWGN · Completion 06 Sep 2025</text>
+  </g>
+
+  <g font-family="monospace" font-size="12" fill="#9a938c">
+    <text x="480" y="470">IBM SKILLSBUILD · IBM LEARNING PATTERNS</text>
+  </g>
+
+  <rect x="40" y="492" width="720" height="12" rx="0" fill="#0a0a0c"/>
+  <text x="400" y="506" font-family="monospace" font-size="10" fill="#55504b" text-anchor="middle">COMPLETION CERTIFICATE · IBM SKILLSBUILD</text>
+</svg>

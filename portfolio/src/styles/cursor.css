@@ -1,0 +1,5 @@
+/* cursor animation removed per request — the native browser cursor is
+   left intact in its default colour throughout. The file is kept as a
+   stub so nothing else references these classes, but the dot and ring
+   are not rendered and the native cursor is never hidden.
+ */

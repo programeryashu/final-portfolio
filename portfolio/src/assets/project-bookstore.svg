@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Online Bookstore design mock: catalog with cart and session state">
+  <defs>
+    <linearGradient id="bs-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12100e"/>
+      <stop offset="1" stop-color="#0a0908"/>
+    </linearGradient>
+    <linearGradient id="bs-cover1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2622"/>
+      <stop offset="1" stop-color="#191715"/>
+    </linearGradient>
+    <linearGradient id="bs-cover2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33291f"/>
+      <stop offset="1" stop-color="#1d1712"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bs-bg)"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#2a2724"/>
+  <rect x="0" y="0" width="800" height="40" fill="#161513"/>
+  <circle cx="22" cy="20" r="5" fill="#f8e7dd" opacity="0.75"/>
+  <circle cx="42" cy="20" r="5" fill="#2a2724"/>
+  <circle cx="62" cy="20" r="5" fill="#2a2724"/>
+  <text x="80" y="25" font-family="Poppins, sans-serif" font-weight="600" font-size="14" fill="#ede8e4">paperback.dev</text>
+
+  <g font-family="monospace" font-size="12">
+    <text x="480" y="25" fill="#9a938c">catalogue</text>
+    <text x="580" y="25" fill="#9a938c">orders</text>
+    <text x="700" y="25" fill="#f8e7dd">cart (3)</text>
+    <text x="762" y="25" fill="#55504b">| yash_s</text>
+  </g>
+
+  <!-- search bar -->
+  <rect x="32" y="64" width="420" height="30" rx="15" fill="#0d0d0d" stroke="#2a2724"/>
+  <text x="50" y="84" font-family="monospace" font-size="12" fill="#55504b">search 2,148 titles…</text>
+  <rect x="660" y="64" width="108" height="30" rx="4" fill="#161513" stroke="#2a2724"/>
+  <text x="714" y="84" font-family="monospace" font-size="11" fill="#9a938c" text-anchor="middle">genre ▾</text>
+
+  <!-- book grid: 4 covers -->
+  <g>
+    <!-- book 1 -->
+    <rect x="32" y="118" width="150" height="212" rx="3" fill="url(#bs-cover1)" stroke="#2a2724"/>
+    <rect x="44" y="136" width="100" height="1.5" fill="#f8e7dd" opacity="0.4"/>
+    <text x="44" y="166" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#ede8e4">The Pragmatic</text>
+    <text x="44" y="186" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#ede8e4">Programmer</text>
+    <text x="44" y="308" font-family="monospace" font-size="10" fill="#9a938c">Hunt · Thomas</text>
+    <text x="44" y="326" font-family="monospace" font-size="12" fill="#f8e7dd">₹549</text>
+    <!-- spine line -->
+    <path d="M50 118v212" stroke="#000" stroke-opacity="0.35" stroke-width="2"/>
+    <!-- book 2 -->
+    <rect x="212" y="118" width="150" height="212" rx="3" fill="url(#bs-cover2)" stroke="#2a2724"/>
+    <text x="224" y="166" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#ede8e4">Flask Web</text>
+    <text x="224" y="186" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#ede8e4">Development</text>
+    <text x="224" y="308" font-family="monospace" font-size="10" fill="#9a938c">Grinberg</text>
+    <text x="224" y="326" font-family="monospace" font-size="12" fill="#f8e7dd">₹620</text>
+    <path d="M230 118v212" stroke="#000" stroke-opacity="0.35" stroke-width="2"/>
+    <!-- book 3, hovered -->
+    <rect x="392" y="118" width="150" height="212" rx="3" fill="url(#bs-cover1)" stroke="#f8e7dd" stroke-opacity="0.5"/>
+    <path d="M400 118v212" stroke="#000" stroke-opacity="0.35" stroke-width="2"/>
+    <text x="412" y="166" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#ede8e4">Clean Code</text>
+    <text x="412" y="308" font-family="monospace" font-size="10" fill="#9a938c">Martin</text>
+    <text x="412" y="326" font-family="monospace" font-size="12" fill="#f8e7dd">₹710</text>
+    <rect x="412" y="284" width="92" height="20" fill="#f8e7dd"/>
+    <text x="458" y="298" font-family="monospace" font-size="10.5" fill="#080808" text-anchor="middle">add to cart</text>
+    <!-- book 4 -->
+    <rect x="572" y="118" width="150" height="212" rx="3" fill="url(#bs-cover2)" stroke="#2a2724"/>
+    <path d="M580 118v212" stroke="#000" stroke-opacity="0.35" stroke-width="2"/>
+    <text x="592" y="166" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#ede8e4">Learning SQL</text>
+    <text x="592" y="308" font-family="monospace" font-size="10" fill="#9a938c">Beaulieu</text>
+    <text x="592" y="326" font-family="monospace" font-size="12" fill="#f8e7dd">₹480</text>
+    <!-- out of stock chip -->
+    <rect x="592" y="284" width="76" height="20" fill="none" stroke="#55504b"/>
+    <text x="630" y="298" font-family="monospace" font-size="10" fill="#55504b" text-anchor="middle">out of stock</text>
+  </g>
+
+  <!-- cart line items -->
+  <text x="32" y="376" font-family="monospace" font-size="11" fill="#9a938c" letter-spacing="2">CART · 3 ITEMS · SESSION #A41F</text>
+  <g font-family="monospace" font-size="12" fill="#ede8e4">
+    <text x="32" y="406">1× Pragmatic Programmer</text>
+    <text x="332" y="406" fill="#9a938c">₹549</text>
+    <text x="32" y="428">1× Flask Web Development</text>
+    <text x="332" y="428" fill="#9a938c">₹620</text>
+  </g>
+  <text x="600" y="417" font-family="monospace" font-size="13" fill="#f8e7dd">total ₹1,169</text>
+  <rect x="600" y="432" width="122" height="28" fill="#f8e7dd"/>
+  <text x="661" y="451" font-family="monospace" font-size="12" fill="#080808" text-anchor="middle">checkout →</text>
+
+  <text x="32" y="458" font-family="Georgia, serif" font-style="italic" font-size="14" fill="#55504b">design mock — catalog updated as the schema grew up</text>
+  <text x="32" y="480" font-family="monospace" font-size="11" fill="#55504b">flask · mysql · html · css · js</text>
+</svg>

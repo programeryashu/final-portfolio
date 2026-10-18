@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="AgriConnect design mock: farmer marketplace listing with price context">
+  <defs>
+    <linearGradient id="ag-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101112"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#ag-bg)"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#2a2724"/>
+  <rect x="0" y="0" width="800" height="38" fill="#161513"/>
+  <circle cx="22" cy="19" r="5" fill="#f8e7dd" opacity="0.75"/>
+  <circle cx="42" cy="19" r="5" fill="#2a2724"/>
+  <circle cx="62" cy="19" r="5" fill="#2a2724"/>
+  <text x="60" y="24" font-family="monospace" font-size="12" fill="#ede8e4" letter-spacing="1">agriconnect</text>
+  <text x="720" y="24" font-family="monospace" font-size="11" fill="#55504b" text-anchor="end">farmer dashboard</text>
+
+  <!-- header row: listing title + hero price -->
+  <text x="32" y="86" font-family="Poppins, sans-serif" font-weight="600" font-size="22" fill="#ede8e4">Tomato — 400 kg available</text>
+  <text x="32" y="108" font-family="monospace" font-size="12" fill="#9a938c">Nashik mandi · listed 2h ago · direct sale</text>
+  <text x="768" y="92" font-family="monospace" font-size="13" fill="#55504b" text-anchor="end">mandi range</text>
+  <text x="768" y="116" font-family="monospace" font-size="15" fill="#f8e7dd" text-anchor="end">₹22 – ₹31 / kg</text>
+
+  <!-- price context chart -->
+  <rect x="32" y="132" width="440" height="180" rx="6" fill="#0d0d0d" stroke="#2a2724"/>
+  <text x="52" y="158" font-family="monospace" font-size="11" fill="#9a938c" letter-spacing="2">PRICE TREND · LAST 6 WEEKS</text>
+  <g stroke="#1e1c1a" stroke-width="1">
+    <path d="M52 200h400 M52 236h400 M52 272h400"/>
+  </g>
+  <!-- area line -->
+  <path d="M56 250 L110 242 L164 252 L218 236 L272 240 L326 224 L380 230 L434 208" fill="none" stroke="#f8e7dd" stroke-width="2"/>
+  <!-- demand hint bar -->
+  <rect x="52" y="286" width="400" height="10" fill="#161513"/>
+  <rect x="52" y="286" width="292" height="10" fill="#f8e7dd" opacity="0.4"/>
+  <text x="52" y="308" font-family="monospace" font-size="10.5" fill="#55504b">demand index</text>
+  <text x="452" y="308" font-family="monospace" font-size="10.5" fill="#f8e7dd" text-anchor="end">hi</text>
+
+  <!-- listing form card -->
+  <rect x="496" y="132" width="272" height="180" rx="6" fill="#0d0d0d" stroke="#2a2724"/>
+  <g font-family="monospace" font-size="11" fill="#9a938c">
+    <text x="516" y="158">YOUR PRICE</text>
+  </g>
+  <text x="516" y="188" font-family="monospace" font-size="24" fill="#f8e7dd">₹28 /kg</text>
+  <text x="656" y="188" font-family="monospace" font-size="10" fill="#55504b">within range</text>
+  <line x1="516" y1="206" x2="748" y2="206" stroke="#1e1c1a"/>
+  <g font-family="monospace" font-size="11" fill="#9a938c">
+    <text x="516" y="228">est. buyer cut</text>
+    <text x="748" y="228" fill="#ede8e4" text-anchor="end">0</text>
+    <text x="516" y="250">you keep</text>
+    <text x="748" y="250" fill="#f8e7dd" text-anchor="end">~100%</text>
+    <text x="516" y="272">vs mandi avg</text>
+    <text x="748" y="272" fill="#ede8e4" text-anchor="end">+18%</text>
+  </g>
+  <rect x="516" y="288" width="110" height="16" rx="2" fill="#161513" stroke="#2a2724"/>
+  <text x="526" y="300" font-family="monospace" font-size="10" fill="#ede8e4">list produce →</text>
+
+  <!-- middleman strip: the point of the project -->
+  <text x="32" y="352" font-family="monospace" font-size="11" fill="#9a938c" letter-spacing="2">THE CHAIN</text>
+  <g font-family="monospace" font-size="12">
+    <rect x="32" y="366" width="96" height="26" fill="#141312" stroke="#2a2724"/>
+    <text x="80" y="383" fill="#ede8e4" text-anchor="middle">farmer</text>
+    <rect x="152" y="366" width="96" height="26" fill="#141312" stroke="#3a352f" stroke-dasharray="3 3"/>
+    <text x="200" y="383" fill="#55504b" text-anchor="middle" text-decoration="line-through">agent ✕</text>
+    <rect x="272" y="366" width="96" height="26" fill="#141312" stroke="#3a352f" stroke-dasharray="3 3"/>
+    <text x="320" y="383" fill="#55504b" text-anchor="middle" text-decoration="line-through">wholesaler ✕</text>
+    <rect x="392" y="366" width="96" height="26" fill="#141312" stroke="#2a2724"/>
+    <text x="440" y="383" fill="#ede8e4" text-anchor="middle">buyer</text>
+  </g>
+  <text x="512" y="382" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#55504b">fewer hands, fairer price</text>
+
+  <!-- footer tech note -->
+  <line x1="32" y1="428" x2="768" y2="428" stroke="#1e1c1a"/>
+  <text x="32" y="458" font-family="Georgia, serif" font-style="italic" font-size="14" fill="#55504b">design mock — hackathon build, figures illustrative</text>
+  <text x="32" y="480" font-family="monospace" font-size="11" fill="#55504b">react · tailwind css · ai/ml · data analysis</text>
+</svg>

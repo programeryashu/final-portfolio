@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Prediction Arena design mock: game mode with instant score feedback">
+  <defs>
+    <linearGradient id="pa-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e0d0c"/>
+      <stop offset="1" stop-color="#090808"/>
+    </linearGradient>
+    <radialGradient id="pa-glow" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#f8e7dd" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#f8e7dd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#pa-bg)"/>
+  <rect width="800" height="500" fill="url(#pa-glow)"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#2a2724"/>
+  <rect x="0" y="0" width="800" height="38" fill="#161513"/>
+  <circle cx="22" cy="19" r="5" fill="#f8e7dd" opacity="0.75"/>
+  <circle cx="42" cy="19" r="5" fill="#2a2724"/>
+  <circle cx="62" cy="19" r="5" fill="#2a2724"/>
+  <text x="80" y="24" font-family="monospace" font-size="12" fill="#ede8e4" letter-spacing="1">prediction arena</text>
+  <text x="640" y="24" font-family="monospace" font-size="11" fill="#9a938c">streak: <tspan fill="#f8e7dd">5</tspan></text>
+  <text x="768" y="24" font-family="monospace" font-size="11" fill="#f8e7dd" text-anchor="end">pts 2,340</text>
+
+  <!-- mode tabs -->
+  <g font-family="monospace" font-size="11.5">
+    <rect x="32" y="58" width="106" height="28" rx="3" fill="#f8e7dd"/>
+    <text x="85" y="76" fill="#080808" text-anchor="middle">coin flip</text>
+    <rect x="148" y="58" width="106" height="28" rx="3" fill="#131211" stroke="#2a2724"/>
+    <text x="201" y="76" fill="#9a938c" text-anchor="middle">higher-lower</text>
+    <rect x="264" y="58" width="106" height="28" rx="3" fill="#131211" stroke="#2a2724"/>
+    <text x="317" y="76" fill="#9a938c" text-anchor="middle">timing</text>
+    <rect x="380" y="58" width="106" height="28" rx="3" fill="#131211" stroke="#2a2724"/>
+    <text x="433" y="76" fill="#55504b" text-anchor="middle">soon…</text>
+  </g>
+
+  <!-- round card -->
+  <rect x="200" y="110" width="400" height="180" rx="10" fill="#0d0c0b" stroke="#2a2724"/>
+  <text x="400" y="146" font-family="monospace" font-size="11" fill="#9a938c" letter-spacing="2" text-anchor="middle">ROUND 12 · heads or tails</text>
+
+  <!-- the coin: two states -->
+  <g transform="translate(330, 210)">
+    <circle r="34" fill="#1d1a17" stroke="#f8e7dd" stroke-opacity="0.55" stroke-width="2"/>
+    <circle r="26" fill="none" stroke="#f8e7dd" stroke-opacity="0.25"/>
+    <text y="6" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#f8e7dd" text-anchor="middle">H</text>
+  </g>
+  <g font-family="monospace" font-size="12" fill="#ede8e4">
+    <rect x="252" y="258" width="100" height="24" rx="3" fill="#161513" stroke="#2a2724"/>
+    <text x="302" y="274" text-anchor="middle">heads</text>
+    <rect x="452" y="258" width="100" height="24" rx="3" fill="#f8e7dd"/>
+    <text x="502" y="274" fill="#080808" text-anchor="middle">TAILS ✓</text>
+  </g>
+  <text x="400" y="164" font-family="monospace" font-size="11" fill="#55504b" text-anchor="middle">you picked heads — the coin said no</text>
+
+  <!-- floating score popup -->
+  <g transform="translate(556, 150) rotate(4)">
+    <rect x="-8" y="-22" width="104" height="30" rx="4" fill="#f8e7dd"/>
+    <text x="44" y="-2" font-family="monospace" font-weight="bold" font-size="14" fill="#080808" text-anchor="middle">+120 pts</text>
+  </g>
+  <text x="518" y="196" font-family="monospace" font-size="10.5" fill="#55504b">96ms → felt instant</text>
+
+  <!-- HUD: points engine -->
+  <text x="32" y="330" font-family="monospace" font-size="11" fill="#9a938c" letter-spacing="2">POINTS ENGINE · SHARED ACROSS MODES</text>
+  <g font-family="monospace" font-size="12">
+    <rect x="32" y="344" width="180" height="44" fill="#131211" stroke="#2a2724"/>
+    <text x="48" y="362" fill="#55504b" font-size="10">base</text>
+    <text x="48" y="380" fill="#ede8e4">+100 / win</text>
+    <rect x="222" y="344" width="180" height="44" fill="#131211" stroke="#2a2724"/>
+    <text x="238" y="362" fill="#55504b" font-size="10">streak bonus</text>
+    <text x="238" y="380" fill="#ede8e4">×1.2 live</text>
+    <rect x="412" y="344" width="180" height="44" fill="#131211" stroke="#2a2724"/>
+    <text x="428" y="362" fill="#55504b" font-size="10">speed bonus</text>
+    <text x="428" y="380" fill="#f8e7dd">+20 fast</text>
+    <rect x="602" y="344" width="166" height="44" fill="#131211" stroke="#2a2724"/>
+    <text x="618" y="362" fill="#55504b" font-size="10">rank</text>
+    <text x="618" y="380" fill="#ede8e4">#7 of 214</text>
+  </g>
+
+  <!-- recent outcomes ticker -->
+  <g font-family="monospace" font-size="11" fill="#9a938c">
+    <text x="32" y="428"><tspan fill="#f8e7dd">+</tspan> you · tails · r11</text>
+    <text x="200" y="428">− you · heads · r10</text>
+    <text x="360" y="428"><tspan fill="#f8e7dd">+</tspan> you · heads · r9</text>
+    <text x="500" y="428"><tspan fill="#f8e7dd">+</tspan> you · tails · r8</text>
+  </g>
+
+  <text x="32" y="462" font-family="Georgia, serif" font-style="italic" font-size="14" fill="#55504b">design mock — numbers from a real dev session, ranks illustrative</text>
+  <text x="32" y="482" font-family="monospace" font-size="11" fill="#55504b">javascript · single-page state engine</text>
+</svg>

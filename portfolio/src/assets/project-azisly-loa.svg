@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Azisly Letter of Appreciation — top 10% performers">
+  <defs>
+    <linearGradient id="loa-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f100d"/>
+      <stop offset="1" stop-color="#070709"/>
+    </linearGradient>
+    <linearGradient id="loa-top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a140d"/>
+      <stop offset="1" stop-color="#0f100d"/>
+    </linearGradient>
+    <linearGradient id="loa-ribbon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9b8a4"/>
+      <stop offset="0.5" stop-color="#f8e7dd"/>
+      <stop offset="1" stop-color="#d9b8a4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="520" fill="url(#loa-bg)"/>
+  <rect width="800" height="520" fill="none" stroke="#26221d" stroke-width="1"/>
+
+  <rect x="0" y="0" width="800" height="46" fill="url(#loa-top)"/>
+  <rect x="0" y="44" width="800" height="2" fill="#d9b8a4" opacity="0.6"/>
+
+  <path d="M20 28 L30 28 L25 38 Z" fill="#d9b8a4"/>
+
+  <text x="460" y="26" font-family="Georgia, serif" font-weight="600" font-size="24" fill="#ede8e4" text-anchor="end" letter-spacing="1">LETTER OF APPRECIATION</text>
+  <text x="460" y="46" font-family="monospace" font-size="11" fill="#55504b" text-anchor="end">AWARDED TO TOP 10% OF COHORT</text>
+
+  <rect x="40" y="74" width="720" height="360" rx="12" fill="#12100d" stroke="#2a241e" stroke-width="1.2"/>
+  <rect x="40" y="74" width="720" height="20" rx="12" fill="#d9b8a4" opacity="0.18"/>
+
+  <rect x="280" y="96" width="240" height="8" rx="4" fill="url(#loa-ribbon)" opacity="0.9"/>
+  <rect x="280" y="96" width="240" height="8" rx="4" fill="none" stroke="#f8e7dd" stroke-width="1"/>
+
+  <text x="400" y="126" font-family="Georgia, serif" font-weight="600" font-size="18" fill="#d9b8a4" text-anchor="middle" letter-spacing="4">AWARDED TO TOP 10%</text>
+
+  <text x="400" y="162" font-family="Georgia, serif" font-weight="700" font-size="44" fill="#f8e7dd" text-anchor="middle" letter-spacing="1">YASH B HARTI</text>
+
+  <g font-family="monospace" font-size="14" fill="#9a938c">
+    <text x="400" y="218" text-anchor="middle">Ranked among the top performers</text>
+    <text x="400" y="238" text-anchor="middle">in the 15-Day Impact Sprint cohort</text>
+  </g>
+
+  <g font-family="Georgia, serif" font-size="20" fill="#ede8e4">
+    <text x="70" y="306">To Whom It May Concern,</text>
+    <text x="70" y="334">I am pleased to recommend Yash Bharti (Dpg Polytechnic College),</text>
+    <text x="70" y="362">who successfully completed the Azisly Impact Sprint: 15-Day Live Project</text>
+    <text x="70" y="390">and the 30 Hours Course, a consulting-based, real-world business simulation</text>
+    <text x="70" y="418">powered by Azisly.ai and Partnered Companies.</text>
+    <text x="70" y="446">Yash ranked among the top 10% of participants, demonstrating exceptional</text>
+    <text x="70" y="474">analytical ability, practical applications of AI, and the capability</text>
+    <text x="70" y="502">to deliver high-quality outcomes under tight timelines.</text>
+  </g>
+
+  <g font-family="monospace" font-size="13" fill="#55504b">
+    <text x="70" y="338">LoR CF No: AZTL-15261031 · Issued Sep 5, 2026</text>
+  </g>
+
+  <g font-family="monospace" font-size="12" fill="#9a938c">
+    <text x="480" y="470">PRAISON · FOUNDER, AZISLY</text>
+  </g>
+  <g font-family="Georgia, serif" font-size="20" fill="#ede8e4">
+    <text x="70" y="460">— Prasun Choudhary</text>
+  </g>
+
+  <rect x="40" y="492" width="720" height="12" rx="0" fill="#0a0a0c"/>
+  <text x="400" y="506" font-family="monospace" font-size="10" fill="#55504b" text-anchor="middle">LETTER OF APPRECIATION · AZISLY IMPACT SPrint · TOP 10%</text>
+</svg>
