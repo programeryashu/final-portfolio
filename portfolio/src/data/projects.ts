@@ -198,7 +198,7 @@ export const certificates: Certificate[] = [
     issued: 'September 10, 2026',
     issuer: 'Azisly · Certified AI — Corporate Ready',
     cfNo: 'AZTL-15261271',
-    certificate: 'https://yashbharti.in/certs/Azisly%20Impact%20Sprint%2015-Day%20AI%20Live%20Project%20&%2030%20Hours%20Course%20-%20Yash%20Bharti.pdf',
+    certificate: 'https://yashbharti.in/certs/15-Day%20Live%20Project%20%E2%80%93%20Impact%20Sprint%20&%2030%20Hours%20Course%20Completion-Yash%20Bharti.pdf',
     image: azislyCertImg,
   },
   {
@@ -210,7 +210,7 @@ export const certificates: Certificate[] = [
     issued: 'September 05, 2026',
     issuer: 'Azisly · Prasun Choudhary, Founder',
     cfNo: 'AZTL-15261031',
-    certificate: 'https://yashbharti.in/certs/LOA-Azisly%20Impact%20Sprint%2015-Day%20AI%20Live%20Project%20&%2030%20Hours%20Course%20-%20Yash%20Bharti.pdf',
+    certificate: 'https://yashbharti.in/certs/LOA-Azisly%20Impact%20Sprint%2015-Day%20AI%20Live%20Project%20&%2030%20Hours%20Course%20-Yash%20Bharti.pdf',
     image: azislyLoaImg,
   },
   {
