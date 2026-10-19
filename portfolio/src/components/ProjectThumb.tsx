@@ -19,7 +19,7 @@ export function ProjectThumb({ project }: { project: Project }) {
     <span className={`thumb thumb--${project.id}`}>
       <span className="thumb__grid" aria-hidden />
       <span className="thumb__initials">{initials}</span>
-      <span className="thumb__label">design mock pending — the code is real</span>
+      <span className="thumb__label">the desk where things get broken and fixed is written</span>
     </span>
   )
 }
