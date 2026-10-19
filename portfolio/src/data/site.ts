@@ -19,6 +19,7 @@ export const site = {
     { label: 'GitHub', href: 'https://github.com/programeryashu' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/yash-bharti-354aa4384' },
     { label: 'Instagram', href: 'https://www.instagram.com/yash_bharti2007' },
+    { label: 'WhatsApp', href: 'https://wa.me/9625017921' },
   ],
 
   /** low-effort to update, per spec */
