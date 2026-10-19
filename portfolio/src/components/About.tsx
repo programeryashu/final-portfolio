@@ -75,7 +75,10 @@ export function About({ tier }: { tier: 'high' | 'low' }) {
               <Workspace />
             </Suspense>
           ) : (
-            <FallbackTerminal />
+            <>
+              <FallbackTerminal />
+              <WorkspacePhoto />
+            </>
           )}
         </div>
       </div>
@@ -103,5 +106,17 @@ function FallbackTerminal() {
         <span className="term__caret" />
       </div>
     </div>
+  )
+}
+
+/** Workspace photo shown beneath the terminal when 3D is skipped */
+function WorkspacePhoto() {
+  return (
+    <img
+      src="/certs/Yash_Workspace_Setup.jpg"
+      alt="Home office setup: light beige desk with black ergonomic chair, dual monitors, potted plant, and peacock feathers against botanical wallpaper. Laptop screen shows a dark-themed coding interface. The chair features a MATRIX-branded headrest."
+      className="about__workspace-photo"
+      loading="lazy"
+    />
   )
 }
