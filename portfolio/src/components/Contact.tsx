@@ -8,12 +8,13 @@ import { site } from '../data/site'
  * Terminal-flavored contact: the "connect" readout lists real socials.
  * The form POSTs to Web3Forms (serverless form-to-email) so messages go
  * straight to site.email — no backend of ours. The access key is a
- * public alias by design and is injected at build time through
- * VITE_WEB3FORMS_ACCESS_KEY. Without a key configured it falls back to
- * composing a mailto: draft — no backend, no fake sends.
+ * public alias by design; VITE_WEB3FORMS_ACCESS_KEY still overrides it
+ * at build time. With no key at all it falls back to composing a
+ * mailto: draft — no backend, no fake sends.
  */
 const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit'
-const accessKey: string | undefined = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+const accessKey: string =
+  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'ad7e353b-c67d-4672-bba2-7a214d2cbed5'
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
